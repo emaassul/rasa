@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-right-img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px; 
+            height: auto;
+        }
+        .form-container {
+            width: 470px;
+            height: 350px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #92d0a6;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .form-field[type="text"],
+        .form-field[type="email"] {
+            width: calc(100% - 22px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #131010;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #c4ead6;
+            color: black;
+        }
+        .submit-button {
+            background-color: #ddefdd;
+            border: 1px solid #131010;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: black;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #c3f3e1;
+            color: #000;
+        }
+        h8 {
+            text-align: center;
+            font-style: italic;
+            background: #92d0a6;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="s.jpg" alt="صورة" class="top-right-img">
+    <div class="form-container">
+        <h8>التسجيل</h8>
+        <form action="/register" method="post">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" class="form-field" required>
+            <br>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" class="form-field" required>
+            <br>
+            <label for="phone">رقم الهاتف:</label>
+            <input type="text" id="phone" name="phone" class="form-field" required>
+            <br>
+            <input type="submit" class="submit-button" value="تسجيل">
+        </form>
+    </div>
+</body>
+</html>
